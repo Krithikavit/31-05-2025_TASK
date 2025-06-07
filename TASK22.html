@@ -1,0 +1,121 @@
+﻿﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1b2a3a;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background:pink;
+            padding: 20px 10px;
+            float: left;
+            box-sizing: border-box;
+            color: white;
+        }
+
+            .sidebar h2 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .sidebar a {
+                display: block;
+                color: black;
+                padding: 10px;
+                text-decoration: none;
+                margin-bottom: 5px;
+            }
+
+                .sidebar a:hover {
+                    background-color: #2e9c5c;
+                }
+
+        .main-content {
+            margin-left: 200px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            min-height: 100vh;
+        }
+
+            .main-content h1 {
+                color: #27a745;
+                margin-bottom: 40px;
+            }
+
+        .dashboard-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+            .card h3 {
+                margin: 0;
+                font-size: 14px;
+                color: #333;
+            }
+
+            .card p {
+                margin: 10px 0 0;
+                font-size: 20px;
+                color: #27a745;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>School Dashboard</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Students</a>
+        <a href="#">Teachers</a>
+        <a href="#">Classes</a>
+        <a href="#">Exams</a>
+        <a href="#">Library</a>
+        <a href="#">Settings</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to the VIT School Dashboard</h1>
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p>500</p>
+            </div>
+            <div class="card">
+                <h3>Total Teachers</h3>
+                <p>50</p>
+            </div>
+
+            <div class="card">
+                <h3>Classes</h3>
+                <p>20</p>
+            </div>
+            <div class="card">
+                <h3>Upcoming Exams</h3>
+                <p>5</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
